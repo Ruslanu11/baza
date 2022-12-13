@@ -1,0 +1,33 @@
+CREATE TABLE unit_measurements (
+ unit_code_id INTEGER PRIMAY KEY NOT NULL,
+ unit_measurement VARCHAR(50) ;
+
+CREATE TABLE stock (
+ code_ingradient_id INTEGER PRIMAY KEY NOT NULL,
+ ingradient VARCHAR2 (50),
+ unit_measurement INTEGER,
+ weight INTEGER,
+ unit_price INTEGER) ;
+
+CREATE TABLE menu (
+ code_dish_id INTEGER PRIMAY KEY NOT NULL,
+ name VARCHAR2 (50),
+ price INTEGER,
+ unit_measurements INTEGER,
+ weight INTEGER,
+ ingardient VARCHAR2 (50) ;
+
+CREATE TABLE order (
+ code_order_id INTEGER PRIMAY KEY NOT NULL,
+ dish VARCHAR2 (50),
+ salesman VARCHAR (50),
+ cook VARCHAR (50) ;
+
+CREATE TABLE employees (
+ fio_id VARCHAR (50) PRIMAY KEY NOT NULL,
+ telephone INTEGER, 
+ job_title VARCHAR2 (50) ;
+
+CREATE TABLE positions (
+ job_title_id VARCHAR (50),
+ salary INTEGER ;
