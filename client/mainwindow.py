@@ -28,6 +28,6 @@ class MainWindow(tk.Tk):
 
 if __name__ == '__main__':
     root = MainWindow()
-    root.title("Наша база")
+    root.title("База столовой")
     root.geometry('800x600')
     root.mainloop()
